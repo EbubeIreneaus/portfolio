@@ -1,0 +1,67 @@
+html, body {
+    scroll-behavior: smooth !important;
+}
+
+body {
+    background: black;
+    overflow-x: hidden;
+  }
+  
+  @keyframes wave {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .animated-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(45deg, #ff0080, #8000ff, #0080ff);
+    background-size: 300% 300%;
+    animation: wave 10s ease infinite;
+    opacity: 0.3;
+   
+  }
+
+  .sidenav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 250px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    transition: all 0.5s ease-in-out;
+    background: linear-gradient(45deg, #ff0080, #8000ff, #0080ff);
+    background-size: 300% 300%;
+    animation: wave 10s ease infinite;
+    z-index: 1000;
+  }
+  
+  .sidenav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  
+  .sidenav button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+  }
+  
+  .sidenav.open {
+    right: 0;
+  }

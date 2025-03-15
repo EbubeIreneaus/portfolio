@@ -1,0 +1,92 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Blog {
+  id       Int         @id @default(autoincrement())
+  title    String
+  desc     String
+  kw       String?
+  content  String      @db.Text
+  image    String
+  published Boolean    @default(false)
+  createdAt DateTime   @default(now())
+  updatedAt DateTime   @updatedAt
+  comments Comment[]
+  likes    BlogLikes[]
+}
+
+model Comment {
+  id              Int            @id @default(autoincrement())
+  blog            Blog           @relation(fields: [blogId], references: [id])
+  blogId          Int
+  name            String?
+  email           String?
+  content         String
+  createdAt       DateTime       @default(now())
+  parentComment   Comment?       @relation("CommentToComment", fields: [parentCommentId], references: [id])
+  parentCommentId Int?
+  replies         Comment[]      @relation("CommentToComment")
+  likes           CommentLikes[]
+}
+
+model BlogLikes {
+  id        Int      @id @default(autoincrement())
+  blog      Blog     @relation(fields: [blogId], references: [id])
+  blogId    Int
+  email     String
+  createdAt DateTime @default(now())
+}
+
+model CommentLikes {
+  id        Int      @id @default(autoincrement())
+  comment   Comment  @relation(fields: [commentId], references: [id])
+  commentId Int
+  email     String
+  createdAt DateTime @default(now())
+}
+
+model Visitors {
+  id        Int       @id @default(autoincrement())
+  ip        String
+  enterTime DateTime  @default(now())
+  leaveTime DateTime?
+  latitude  Float?
+  longitude Float?
+  createdAt DateTime  @default(now())
+}
+
+model Newsletters {
+  id        Int      @id @default(autoincrement())
+  email     String
+  createdAt DateTime @default(now())
+}
+
+model Projects {
+  id        Int      @id @default(autoincrement())
+  title     String
+  content   String?  @db.Text
+  link      String
+  image     String
+  github    String?
+  category  String?
+  skills    String?
+  createdAt DateTime @default(now())
+}
+
+model Message {
+  id        Int      @id @default(autoincrement())
+  name      String
+  email     String
+  message   String
+  replied   Boolean? @default(false)
+  createdAt DateTime @default(now())
+}
