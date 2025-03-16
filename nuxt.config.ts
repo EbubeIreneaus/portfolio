@@ -2,6 +2,19 @@
 export default defineNuxtConfig({
   compatibilityDate: "2024-11-01",
   devtools: { enabled: true },
+  app: {
+    head: {
+      title: "Ebube Ireneaus Web Developer Portfolio",
+      htmlAttrs: {
+        lang: 'en',
+      },
+      meta: [
+      ],
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/fav.ico' }
+      ]
+    }
+  },
   modules: [
     "@nuxtjs/tailwindcss",
     "@nuxt/image",

@@ -3,7 +3,7 @@ html, body {
 }
 
 body {
-    background: black;
+    background: linear-gradient(45deg, #ff0080, #8000ff, #0080ff);
     overflow-x: hidden;
   }
   
@@ -14,7 +14,7 @@ body {
   }
   
   .animated-bg {
-    position: fixed;
+    position: fixed !important;
     top: 0;
     left: 0;
     width: 100vw;
