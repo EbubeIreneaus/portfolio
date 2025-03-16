@@ -13,18 +13,7 @@
             <div class="">
               <MainMiniTitle title="Share" />
               <div class="flex gap-x-4 *:btn mt-6">
-                <a href="http://" target="_blank" rel="noopener noreferrer"
-                  ><i class="fab fa-facebook fa-xl"></i
-                ></a>
-                <a href="http://" target="_blank" rel="noopener noreferrer"
-                  ><i class="fab fa-twitter fa-xl"></i
-                ></a>
-                <a href="http://" target="_blank" rel="noopener noreferrer"
-                  ><i class="fab fa-linkedin fa-xl"></i
-                ></a>
-                <a href="http://" target="_blank" rel="noopener noreferrer"
-                  ><i class="fab fa-instagram fa-xl"></i
-                ></a>
+               <button class="btn btn-md" @click="shareWeb">Share <i class="fa fa-share"></i></button>
               </div>
             </div>
           </div>
@@ -52,29 +41,48 @@ import dayjs from "dayjs";
 const route = useRoute();
 const blog = ref<any>(null);
 const { data } = await useFetch<any>("/api/admin/blog/" + route.params.id);
-
 if (data.value) {
   blog.value = data.value;
-
-  useSeoMeta({
-    title: data.value.title,
-    ogTitle: data.value.title,
-    description: data.value.desc,
-    ogDescription: data.value.desc,
-    ogImage: data.value.image,
-    twitterCard: "summary_large_image",
-    applicationName: "Ebube Ireneaus",
-    ogImageAlt: data.value.title,
-    ogUrl:
-      "https://ebustech.vercel.app/blog/" +
-      data.value.id +
-      "?title=" +
-      data.value.title,
-    ogType: "article",
-    author: "Ebube Ireneaus",
-    publisher: "Ebube Ireneaus",
-  });
 }
+
+const shareWeb = () => {
+  if (navigator.share) {
+    navigator
+      .share({
+        title: blog.value.title,
+        text: blog.value.desc,
+        url: window.location.href,
+      })
+      .then(() => console.log("Successful share"))
+      .catch((error) => console.log("Error sharing", error));
+  }
+};
+
+useSeoMeta({
+  title: computed(() => blog.value?.title || "Blog | Ebube Ireneaus"),
+  ogTitle: computed(() => blog.value?.title || "Blog | Ebube Ireneaus"),
+  description: computed(
+    () => blog.value?.desc || "Read insightful blog posts."
+  ),
+  ogDescription: computed(
+    () => blog.value?.desc || "Read insightful blog posts."
+  ),
+  ogImage: computed(
+    () =>
+      blog.value?.image || "https://ebustech.vercel.app/default-og-image.jpg"
+  ),
+  twitterCard: "summary_large_image",
+  applicationName: "Ebube Ireneaus",
+  ogImageAlt: computed(() => blog.value?.title || "Blog Post"),
+  ogUrl: computed(() =>
+    blog.value
+      ? `https://ebustech.vercel.app/blog/${blog.value.id}?title=${blog.value.title}`
+      : "https://ebustech.vercel.app/blog"
+  ),
+  ogType: "article",
+  author: "Ebube Ireneaus",
+  publisher: "Ebube Ireneaus",
+});
 </script>
 
 <style scoped></style>
