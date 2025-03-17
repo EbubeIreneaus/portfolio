@@ -1,5 +1,5 @@
 <template>
-  <div class="splash-screen loader">
+  <div class="splash-screen loader bg-primary">
     <H1 class="text-container">
       <span v-for="(char, index) in title" :key="index" class="letter">
         {{ char }}
@@ -28,11 +28,10 @@ onMounted(() => {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(45deg, #8000ff, #0080ff);
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 9999;
+  z-index: 9999999999999;
   opacity: 1;
   transition: all .3s linear;
 }

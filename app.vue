@@ -1,6 +1,5 @@
 <template>
   <div>
-    <div class="animated-bg"></div>
     <nuxt-layout>
       <NuxtLoadingIndicator />
       <nuxt-page />

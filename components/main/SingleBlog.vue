@@ -19,7 +19,7 @@
         </h2>
         <p class="line-clamp-2 mb-3">{{ blog.desc }}</p>
 
-        <RouterLink :to="`/blog/${blog.id}?title=${blog.title}`" class="btn btn-md">Read More</RouterLink>
+        <RouterLink :to="`/blog/${blog.id}?title=${blog.title}`" class="!btn !btn-md">Read More</RouterLink>
       </div>
     </div>
   </div>

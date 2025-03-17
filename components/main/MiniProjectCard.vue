@@ -15,8 +15,8 @@
           <strong>{{ project.title }}</strong>
         </p>
         <div class="flex gap-5">
-            <a class="btn btn-md" :href="project.link">Visit</a>
-            <a class="btn btn-md" :href="project.github">source code</a>
+            <a class="!btn !btn-md" :href="project.link">Visit</a>
+            <a class="!btn !btn-md" :href="project.github">source code</a>
         </div>
       </div>
     </div>

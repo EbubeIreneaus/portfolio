@@ -1,6 +1,6 @@
 <template>
-  <div class="hero min-h-dvh">
-    <div class="hero-content flex-col space-y-3">
+  <div class="!hero card">
+    <div class="hero-content px-10 flex-col space-y-3 mt-32">
       <h1 class="text-center md:text-left w-full" data-aos="fade-right">Fullstack Web Developer</h1>
       <h2 class="text-6xl font-extrabold font-serif text-center md:text-left" data-aos="fade-up">
         I'm <br />
@@ -10,8 +10,8 @@
 
       <div class="w-full mt-7">
         <div class="flex flex-col md:flex-row items-center gap-y-1 mb-2" data-aos="fade-up">
-            <input type="email" class="input-lg" placeholder="Enter email" />
-            <button class="btn btn-lg md:rounded-l-none">Get Resume</button>
+            <input type="email" class="!input-lg" placeholder="Enter email" />
+            <button class="!btn !btn-lg md:!rounded-l-none">Get Resume</button>
         </div>
 
         <div>

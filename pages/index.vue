@@ -2,63 +2,12 @@
   <main>
     <MainHero />
     <!-- about me -->
-    <div class="card">
-      <div class="card-body grid lg:grid-cols-2 gap-y-10">
-        <div>
-          <MainTitle title="About Me" />
-        </div>
-        <div>
-          <article class="prose">
-            <h3 class="text-2xl font-semibold"  data-aos="fade-right"> 
-              Hi, I'm <strong>Okigwe Ebube Ireneaus</strong>
-            </h3>
-            <p data-aos="fade-left">
-              I'm a passionate Full Stack Developer with over four years of
-              experience in designing and developing modern, high-performing
-              websites. I was born and raised in Abuja, Nigeria, and earned my
-              B.Sc. in Nautical Science from the Nigeria Maritime University,
-              graduating in 2024.
-            </p>
-            <h3 class="text-2xl font-semibold"  data-aos="fade-up">My Tech Skills</h3>
-
-            <div
-              class="offset-xxl-1 mt-5 grid sm:grid-cols-5 grid-cols-3 gap-2"
-            >
-              <div
-                v-for="img in mySkills"
-                :key="img.name"
-                class="rounded-lg px-2 m-1.5"
-                data-aos="fade-up"
-              >
-                <nuxt-img
-                  :src="'/images/tech-logos/' + img.src"
-                  :alt="img.alt.toUpperCase()"
-                  width="100"
-                  height="100"
-                  densities="x1"
-                  quality="90"
-                  format="webp"
-                  class=""
-                />
-                <figcaption class="capitalize text-caption text-center">
-                  {{ img.alt.split(" ")[0] }}
-                </figcaption>
-              </div>
-            </div>
-
-            <nuxt-link to="/about" class="btn btn-primary btn-lg my-10" data-aos="fade-up"
-              >Learn More</nuxt-link
-            >
-          </article>
-        </div>
-      </div>
-    </div>
+     <MainAboutMyself />
     <!-- xxx about me xxx -->
 
     <!--  -->
-    <div class="w-[90%] mx-auto mb-10">
-      <MainServiceCards />
-    </div>
+      <MainMyServiceComp />
+      <MainSpecialSkill />
 
     <!-- project card -->
     <div class="card">

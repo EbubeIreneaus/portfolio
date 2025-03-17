@@ -18,7 +18,7 @@
             </div>
           </div>
 
-          <section>
+          <!-- <section>
             <div>
               <MainMiniTitle title="Comments" />
               <div class="mt-5">
@@ -29,7 +29,7 @@
                 ></textarea>
               </div>
             </div>
-          </section>
+          </section> -->
         </div>
       </div>
     </div>

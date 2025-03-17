@@ -25,7 +25,7 @@
                         required
                     ></textarea>
                 </div>
-                <button :disabled="isLoading" type="submit" class="btn btn-md btn-primary">
+                <button :disabled="isLoading" type="submit" class="!btn !btn-md btn-primary">
                    <i class="fa fa-spinner animate-spin" v-if="isLoading"></i>
                    send
                 </button>
