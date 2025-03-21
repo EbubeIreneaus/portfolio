@@ -18,8 +18,8 @@
         <div class="grid lg:grid-cols-3 sm:grid-cols-2 gap-x-1 gap-y-10">
           <MainMiniProjectCard
             :project="pr"
-            v-for="pr in projects"
-            :key="pr.id"
+            v-for="pr, index in projects"
+            :key="index"
            
           />
         </div>
@@ -96,14 +96,11 @@
 
 <script setup lang="ts">
 import { mySkills } from '~/lib/skills';
-const projects = ref<any>([]);
+import { Projects as projects}  from '~/lib/projects';
+
 const blogs = ref<any>([]);
-const { data: getProjects } = await useFetch<any>("/api/main/project");
 const { data: getBlogs } = await useFetch<any>("/api/main/blog/all?len=10&mini=true");
 
-if (getProjects.value.data) {
-  projects.value = getProjects.value.data;
-}
 
 if (getBlogs.value) {
   blogs.value = getBlogs.value;
