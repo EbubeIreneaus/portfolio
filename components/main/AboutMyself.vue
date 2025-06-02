@@ -18,10 +18,10 @@
 
       <div class="first-sec-about p-lg-1 p-2">
         <div class="about-me-txt lg:p-5">
-          <div class="text-light !px-5 md:!px-px text-balance">
+          <div class="text-light !px-5 md:!px-px text-balance w-full overflow-x-hidden">
             <nuxt-img
               src="/images/ogimage1.jpg"
-              alt="Ebube Ireneaus Sitting on a public chair stairing at his laptop screen while adjusting his collar"
+              alt="black and white image of Ebustech CEO (Ebube Ireneaus) Sitting on his officce looking at his laptop while writing code"
               width="150"
               height="150"
               fit="cover"
