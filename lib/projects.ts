@@ -1,25 +1,23 @@
 export const Projects = [
     
     
-      // {
-      //   title: 'Ireneaus Fashion Store',
-      //   frontend: 'Talwindcss, JavaScript, Vuejs, Quasar Framework',
-      //   backend: 'Node.js, Express.js, mysql, sequelize',
-      //   desc: 'Stunning e-commerce website, with authentication, PWA, SEO-optimized and Flutterwave payment gatway integrated. ',
-      //   Image: 'ifs.webp',
-      //   imgAlt: null,
-      //   link: {
-      //     github: '',
-      //     web: 'https://f-store-demo.netlify.app',
-      //   },
-      // },
-  
-    
+      {
+        title: 'CSHS Portal – School Result Management System',
+        frontend: 'Talwindcss, JavaScript, Vuejs, Quasar Framework',
+        backend: '',
+        desc: 'The CSHS Portal is a simple and efficient school result management system designed for both students and teachers. Teachers can easily upload student results, while students can securely view their academic results by term or session',
+        Image: 'cshs.png',
+        imgAlt: null,
+        link: {
+          github: 'https://github.com/EbubeIreneaus/CSHS-Report-Portal',
+          web: 'https://cshs-report-portal.vercel.app',
+        },
+      },
       {
         title: 'Financial Growth',
         frontend: 'HTML, CSS, JavaScript',
         backend: 'python, django, mysql',
-        desc: 'Buy and Invest in cryptocurrencies and other digital assets. duplicate of Bitzoic Market',
+        desc: 'A platform where users can buy, sell, and invest in cryptocurrencies and other digital assets. Inspired by the functionality and design of Bitzoic Market, it offers a secure and user-friendly environment for crypto trading and asset management.',
         Image: 'financialgrowths.png',
         imgAlt: null,
         link: {
@@ -31,7 +29,7 @@ export const Projects = [
         title: 'Digital Assets Growth',
         frontend: 'JavaScript, vue.js, nuxt.js, vuetify',
         backend: 'python, django, mysql',
-        desc: 'Buy and Invest in cryptocurrencies and other digital assets',
+        desc: 'An Investment platform where users can buy, sell, and invest in cryptocurrencies and other digital assets, it offers a secure and user-friendly environment for crypto trading and asset management.',
         Image: 'digitalassetshome.png',
         imgAlt: null,
         link: {
