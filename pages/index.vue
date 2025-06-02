@@ -7,10 +7,10 @@
 
     <div class="card" id="projects">
       <div class="card-body" >
-        <MainTitle title="Projects" />
+        <MainTitle title="My Projects" />
         <br />
 
-        <div class="grid lg:grid-cols-3 sm:grid-cols-2 gap-x-1 gap-y-10">
+        <div class="grid 2xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 gap-x-1 gap-y-4">
           <MainMiniProjectCard
             :project="pr"
             v-for="pr, index in projects"
