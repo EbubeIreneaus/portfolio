@@ -123,18 +123,18 @@ onBeforeUnmount(() => {
             <div class="flex-grow flex justify-center">
               <!-- Start Header Menu -->
               <ul class="header-nav">
-                <li><a href="/#home">Home</a></li>
-                <li><a href="/about">About</a></li>
+                <li><nuxt-link to="/#home">Home</nuxt-link></li>
+                <li><nuxt-link to="/about">About</nuxt-link></li>
                 <li class="has-dropdown">
-                  <a href="/#service-we-provide">Service</a>
+                  <nuxt-link to="/#service-we-provide">Service</nuxt-link>
                 </li>
                 <li class="has-dropdown">
-                  <a href="/#projects">Projects</a>
+                  <nuxt-link to="/#projects">Projects</nuxt-link>
                 </li>
                 <li class="has-dropdown">
-                  <a href="/#blog">Blog</a>
+                  <nuxt-link to="/#blog">Blog</nuxt-link>
                 </li>
-                <li><a href="/#contact">Contact</a></li>
+                <li><nuxt-link href="/#contact">Contact</nuxt-link></li>
               </ul>
               <!-- End Header Menu -->
             </div>
@@ -199,29 +199,28 @@ onBeforeUnmount(() => {
           <div class="offcanvas-menu">
             <ul>
               <li>
-                <a href="/#home" ><span>Home</span></a>
+                <nuxt-link to="/#home" ><span>Home</span></nuxt-link>
               </li>
               <li>
-                <a href="/about"><span>About</span></a>
+                <nuxt-link to="/about"><span>About</span></nuxt-link>
               </li>
               <li>
-                <a href="/#service-we-provide"
-                  ><span>Services</span></a
-                >
+                <nuxt-link to="/#service-we-provide"
+                  ><span>Services</span></nuxt-link>
                 <!-- <ul class="mobile-sub-menu">
                   <li><a href="service-list.html">Service List</a></li>
                   <li><a href="service-details.html">Service Details</a></li>
                 </ul> -->
               </li>
               <li>
-                <a href="/#projects"><span>Projects</span></a>
+                <nuxt-link to="/#projects"><span>Projects</span></nuxt-link>
               </li>
               <li>
-                <a href="/#blog"><span>Blog</span></a>
+                <nuxt-link to="/#blog"><span>Blog</span></nuxt-link>
               </li>
 
               <li>
-                <a href="#contact"><span>Contact</span></a>
+                <nuxt-link to="#contact"><span>Contact</span></nuxt-link>
               </li>
             </ul>
           </div>

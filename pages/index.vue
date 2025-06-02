@@ -5,8 +5,8 @@
       <MainMyServiceComp />
       <MainSpecialSkill />
 
-    <div class="card">
-      <div class="card-body" id="project">
+    <div class="card" id="projects">
+      <div class="card-body" >
         <MainTitle title="Projects" />
         <br />
 
@@ -21,7 +21,7 @@
       </div>
     </div>
 
-    <div class="card">
+    <div id="blog"  class="card">
       <div class="card-body">
         <MainTitle title="Must Read" />
         <br />
