@@ -58,7 +58,7 @@
             <!-- x Backend service x -->
 
             <!-- Full-Stack service -->
-            <div class="bg-[#252734] shadow" data-aos="fade-left">
+            <div class="bg-[#252734] shadow" data-aos="fade-down">
               <div>
                 <div class="pt-7 px-10 pb-[25px]">
                   <i class="fas fa-award text-5xl"></i>

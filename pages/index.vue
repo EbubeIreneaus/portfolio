@@ -50,7 +50,7 @@
                 </div>
               </div>
 
-              <div class="card" data-aos="fade-left">
+              <div class="card" data-aos="fade-up">
                 <div class="card-body rounded bg-slate-950">
                   <i class="fab fa-whatsapp text-secondary"></i>
                   <a  href="https://wa.me/+2348061982520" target="_blank" rel="noopener noreferrer">+234 806 198 2520</a>
