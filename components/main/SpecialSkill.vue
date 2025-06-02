@@ -23,13 +23,12 @@ const mySkills = [
   { name: 'css', src: 'css.png', alt: 'CSS Logo' },
   { name: 'javaScript', src: 'js.png', alt: 'JavaScript Logo' },
   { name: 'tailwind', src: 'tailwind.png', alt: 'Tailwindcss Logo' },
+  { name: 'react', src: 'react.png', alt: 'React.js Logo' },
   { name: 'vue', src: 'vue.png', alt: 'vue.js Logo' },
   { name: 'nuxt', src: 'nuxt.png', alt: 'nuxt.js Logo' },
-  // { name: 'react', src: 'react.png', alt: 'React.js Logo' },
-  // { name: 'next', src: 'next.png', alt: 'Next.js Logo' },
+  { name: 'next', src: 'next.png', alt: 'Next.js Logo' },
   { name: 'typescript', src: 'ts.png', alt: 'typescript Logo' },
   { name: 'express', src: 'express.png', alt: 'express.js Logo' },
-  { name: 'node', src: 'node.png', alt: 'node.js Logo' },
   { name: 'python', src: 'python.png', alt: 'python Logo' },
   { name: 'django', src: 'django.png', alt: 'django Logo' },
   { name: 'git', src: 'git.png', alt: 'git Logo' },
@@ -69,7 +68,7 @@ const mySkills = [
             <img
              :src="'/images/tech-logos/' + img.src"
              :alt="img.alt.toUpperCase()"
-             class=" px-3 py-3 size-[100px] object-cover object-center"
+             class=" px-3 py-3 size-[100px] object-cover object-center mx-auto "
            />
            <p class="capitalize text-caption text-center">{{ img.alt.split(' ')[0] }}</p>
            </div>

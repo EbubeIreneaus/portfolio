@@ -1,13 +1,15 @@
 <template>
   <div id="about">
     <div class="my-10 mx-auto block">
-      <div class="container px-3  ">
+      <div class="container px-3">
         <div class="row">
           <div class="col-12">
             <!-- Start Section Content -->
             <div class="section-content">
               <span class="section-tag" data-aos="fade-up">About Me</span>
-              <h2 class="section-title" data-aos="fade-right">More About Myself</h2>
+              <h2 class="section-title" data-aos="fade-right">
+                More About Myself
+              </h2>
             </div>
             <!-- End Section Content -->
           </div>
@@ -18,57 +20,54 @@
         <div class="about-me-txt lg:p-5">
           <div class="text-light !px-5 md:!px-px text-balance">
             <nuxt-img
-              src="/images/ogimage.jpg"
+              src="/images/ogimage1.jpg"
               alt="Ebube Ireneaus Sitting on a public chair stairing at his laptop screen while adjusting his collar"
-              width="100"
-              height="100"
-              format="webp"
-              densities="x1"
-              class="float-left px-4 size-80 rounded object-cover hidden md:inline-block w-[300px]"
+              width="150"
+              height="150"
+              fit="cover"
+              class="float-left px-4 size-100 !rounded-xl object-cover object-center hidden md:inline-block w-[300px]"
               data-aos="fade-right"
             />
             <p
               class="txt text-light text-subtitle1 leading-loose"
               data-aos="fade-left"
             >
-              Passionate Full-Stack Developer with a focus on creating seamless
-              web applications. Proficient in
+              Passionate Full-Stack Developer with a strong focus on building
+              seamless and scalable web applications. Proficient in
               <span class="skill-txt">HTML</span>,
               <span class="skill-txt">CSS</span>,
-              <span class="skill-txt">Tailwindcss</span>
-              and <span class="skill-txt">JavaScript</span>, I specialize in
-              crafting visually appealing and responsive front-end interfaces
-              that elevate user experiences. Leveraging
+              <span class="skill-txt">TailwindCSS</span>, and
+              <span class="skill-txt">JavaScript</span>, I craft responsive and
+              visually striking front-end interfaces that offer intuitive user
+              experiences. Leveraging
               <span class="skill-txt">(Vue.js, Nuxt.js, Quasar Framework)</span>
-              and <span class="skill-txt">(React.js, Next.js)</span>, I excel in
-              building dynamic and interactive user interfaces that seamlessly
-              connect with back-end functionalities. <br />
-              <br />
-              Equipped with a foundation in
-              <span class="skill-txt">Node.js</span>,
-              <span class="skill-txt">Express.js</span>,
-              <span class="skill-txt">PHP</span> and
-              <span class="skill-txt">Django</span>, I develop robust and
-              scalable server-side applications. My coding skills are enhanced
-              by a design sensibility, ensuring both technical proficiency and
-              aesthetic excellence. <br /><br />
-              Driven by curiosity and a hunger to learn, I am committed to
-              staying up-to-date with the latest technologies. I thrive in
-              dynamic environments, consistently seeking opportunities to
-              contribute my skills while expanding my toolkit.
+              and <span class="skill-txt">(React.js, Next.js)</span>, I build
+              dynamic, high-performance user interfaces that seamlessly
+              integrate with modern backend systems. <br /><br />
+              On the server side, I work confidently with
+              <span class="skill-txt">Python</span>,
+              <span class="skill-txt">Django</span> 
+              and,
+              <span class="skill-txt">Express.js</span>
+              to develop powerful and
+              scalable APIs that support real-world business logic. I also
+              specialize in <span class="skill-txt">React Native</span>,
+              enabling me to create high-quality cross-platform mobile
+              applications that deliver native experiences. <br /><br />
+              Backed by a keen design sensibility, I combine technical
+              excellence with aesthetic precision. I’m driven by curiosity and
+              an ever-evolving passion for learning, constantly updating my
+              skill set to keep pace with emerging technologies.
               <br /><br />
-              Let's collaborate to bring your ideas to life!
+              Let's collaborate to transform your ideas into impactful digital
+              experiences!
             </p>
           </div>
         </div>
       </div>
 
-      <div
-        class="about-detail flex md:flex-row flex-col gap-5 px-lg-5 p-3"
-      >
-        <div
-          class="info-sec grid md:grid-cols-2 mb-1 w-full gap-y-7"
-        >
+      <div class="about-detail flex md:flex-row flex-col gap-5 px-lg-5 p-3">
+        <div class="info-sec grid md:grid-cols-2 mb-1 w-full gap-y-7">
           <p class="w-full text-subtitle1" data-aos="flip-up">
             <i class="fa-solid fa-angle-right"></i>
             <b> Full Name</b> <span> Okigwe Ebube Ireneaus</span>

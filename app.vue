@@ -9,15 +9,15 @@
 </template>
 
 <script setup lang="ts">
-const seo_desc = "I'm a passionate Full Stack Developer with over four years of experience in designing and developing modern, high-performing websites. I was born and raised in Abuja, Nigeria, and earned my B.Sc. in Nautical Science from the Nigeria Maritime University, graduating in 2024."
+const seo_desc = "I'm a passionate Full Stack Developer with years of experience in designing and developing modern, high-performing websites. I was born and raised in Abuja, Nigeria, and earned my B.Sc. in Nautical Science from the Nigeria Maritime University, graduating in 2024."
 useSeoMeta({
-  ogTitle: 'Ebube Ireneaus Web Developer Portfolio',
+  ogTitle: 'Ebube Ireneaus (Ebustech) Software Developer Portfolio',
   description: seo_desc,
   ogDescription: seo_desc,
-  ogImage: 'https://ebustech.vercel.app/ogimage.jpg',
+  ogImage: 'https://ebustech.vercel.app/images/ogimage1.jpg',
   twitterCard: 'summary_large_image',
   applicationName: 'Ebube Ireneaus',
-  ogImageAlt: 'Ebube Ireneaus Sitting on a chair looking at his laptop while adjusting his colar button',
+  ogImageAlt: 'black and white image of Ebustech CEO (Ebube Ireneaus) Sitting on his officce looking at his laptop while writing code',
   ogUrl: 'https://ebustech.vercel.app',
   ogType: 'website',
   

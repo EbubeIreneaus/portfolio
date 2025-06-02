@@ -96,11 +96,11 @@
                 densities="x1"
                 quality="90"
                 format="webp"
-                class=""
+                class="mx-auto"
               />
-              <figcaption class="capitalize text-caption text-center">
+              <div class="capitalize text-caption text-center">
                 {{ img.alt.split(" ")[0] }}
-              </figcaption>
+              </div>
             </div>
           </div>
         </div>

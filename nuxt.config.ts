@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   app: {
     head: {
-      title: "Ebube Ireneaus Web Developer Portfolio",
+      title: "Ebube Ireneaus (Ebustech) Software Developer Portfolio",
       htmlAttrs: {
         lang: 'en',
       },

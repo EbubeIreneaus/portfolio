@@ -123,18 +123,18 @@ onBeforeUnmount(() => {
             <div class="flex-grow flex justify-center">
               <!-- Start Header Menu -->
               <ul class="header-nav">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a href="/#home">Home</a></li>
+                <li><a href="/about">About</a></li>
                 <li class="has-dropdown">
-                  <a href="#service-we-provide">Service</a>
+                  <a href="/#service-we-provide">Service</a>
                 </li>
                 <li class="has-dropdown">
-                  <a href="#projects">Projects</a>
+                  <a href="/#projects">Projects</a>
                 </li>
                 <li class="has-dropdown">
-                  <a href="#blog">Blog</a>
+                  <a href="/#blog">Blog</a>
                 </li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="/#contact">Contact</a></li>
               </ul>
               <!-- End Header Menu -->
             </div>
@@ -199,13 +199,13 @@ onBeforeUnmount(() => {
           <div class="offcanvas-menu">
             <ul>
               <li>
-                <a href="#home" ><span>Home</span></a>
+                <a href="/#home" ><span>Home</span></a>
               </li>
               <li>
-                <a href="#about"><span>About</span></a>
+                <a href="/about"><span>About</span></a>
               </li>
               <li>
-                <a href="#service-we-provide"
+                <a href="/#service-we-provide"
                   ><span>Services</span></a
                 >
                 <!-- <ul class="mobile-sub-menu">
@@ -214,10 +214,10 @@ onBeforeUnmount(() => {
                 </ul> -->
               </li>
               <li>
-                <a href="#projects"><span>Projects</span></a>
+                <a href="/#projects"><span>Projects</span></a>
               </li>
               <li>
-                <a href="#blog"><span>Blog</span></a>
+                <a href="/#blog"><span>Blog</span></a>
               </li>
 
               <li>

@@ -1,15 +1,10 @@
 <template>
   <main>
     <MainHero />
-    <!-- about me -->
      <MainAboutMyself />
-    <!-- xxx about me xxx -->
-
-    <!--  -->
       <MainMyServiceComp />
       <MainSpecialSkill />
 
-    <!-- project card -->
     <div class="card">
       <div class="card-body" id="project">
         <MainTitle title="Projects" />
@@ -26,7 +21,6 @@
       </div>
     </div>
 
-    <!-- Blog -->
     <div class="card">
       <div class="card-body">
         <MainTitle title="Must Read" />
