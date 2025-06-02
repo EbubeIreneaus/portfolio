@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main class="px-5">
     <MainHero />
      <MainAboutMyself />
       <MainMyServiceComp />
@@ -17,8 +17,7 @@
             :key="index"
            
           />
-        </div>
-      </div>
+        </div>    </div>
     </div>
 
     <div id="blog"  class="card">

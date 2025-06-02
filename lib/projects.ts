@@ -50,19 +50,6 @@ export const Projects = [
           web: 'https://financia-growths.com',
         },
       },
-    
-      // {
-      //   title: 'Ireneaus Jewelry Store',
-      //   frontend: 'JavaScript, vue.js, nuxt.js, vuetify',
-      //   backend: '',
-      //   desc: 'Simple yet fancy e-commerce website(side project), for Jewelry products and fashion',
-      //   Image: 'irjewelrystore.webp',
-      //   imgAlt: null,
-      //   link: {
-      //     github: '',
-      //     web: 'https://irjewelrystore.netlify.app',
-      //   },
-      // },
       {
         title: 'Digital Assets Growths',
         frontend: 'JavaScript, vue.js, nuxt.js, vuetify',
@@ -76,6 +63,18 @@ export const Projects = [
         },
       },
 
+      {
+        title: 'Steeze Pot',
+        frontend: 'JavaScript, vue.js, nuxt.js',
+        backend: '',
+        desc: 'User-friendly food delivery website that connects customers with steezepot kitchen, providing a seamless experience from browsing menus to doorstep delivery.',
+        Image: 'steezepot.png',
+        imgAlt: 'Steezepot website image',
+        link: {
+          github: 'https://github.com/EbubeIreneaus/steeze-pot',
+          web: 'https://steeze-pot.netlify.app',
+        },
+      },
 
       {
         title: 'Starlink Website Clone',
@@ -100,4 +99,17 @@ export const Projects = [
           web: 'https://isls.vercel.app',
         },
       },
+
+      // {
+      //   title: 'Ireneaus Jewelry Store',
+      //   frontend: 'JavaScript, vue.js, nuxt.js, vuetify',
+      //   backend: '',
+      //   desc: 'Simple yet fancy e-commerce website(side project), for Jewelry products and fashion',
+      //   Image: 'irjewelrystore.webp',
+      //   imgAlt: null,
+      //   link: {
+      //     github: '',
+      //     web: 'https://irjewelrystore.netlify.app',
+      //   },
+      // },
     ];
