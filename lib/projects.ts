@@ -1,16 +1,5 @@
 export const Projects = [
-    // {
-    //     title: 'Okis Real Estate',
-    //     frontend: 'Talwindcss, JavaScript, React.js, Next.js',
-    //     backend: '',
-    //     desc: 'showcasing my ability in developing a UI frendly real estate and property management website',
-    //     Image: 'okisestate.webp',
-    //     imgAlt: 'okis real estate website, full page screenshot',
-    //     link: {
-    //       github: '',
-    //       web: 'https://okis-real-estate.vercel.app',
-    //     },
-    //   },
+    
     
       // {
       //   title: 'Ireneaus Fashion Store',
@@ -24,22 +13,10 @@ export const Projects = [
       //     web: 'https://f-store-demo.netlify.app',
       //   },
       // },
-    
-      // {
-      //   title: 'Bitzoic Market',
-      //   frontend: 'HTML, CSS, JavaScript',
-      //   backend: 'python, django, mysql',
-      //   desc: 'Buy and Invest in cryptocurrencies and other digital assets. cloned from oneIdx.com',
-      //   Image: 'bitzoicmarket.webp',
-      //   imgAlt: null,
-      //   link: {
-      //     github: '',
-      //     web: 'https://bitzoicmarket.com',
-      //   },
-      // },
+  
     
       {
-        title: 'Financial Growths',
+        title: 'Financial Growth',
         frontend: 'HTML, CSS, JavaScript',
         backend: 'python, django, mysql',
         desc: 'Buy and Invest in cryptocurrencies and other digital assets. duplicate of Bitzoic Market',
@@ -51,7 +28,7 @@ export const Projects = [
         },
       },
       {
-        title: 'Digital Assets Growths',
+        title: 'Digital Assets Growth',
         frontend: 'JavaScript, vue.js, nuxt.js, vuetify',
         backend: 'python, django, mysql',
         desc: 'Buy and Invest in cryptocurrencies and other digital assets',
@@ -97,6 +74,19 @@ export const Projects = [
         link: {
           github: 'https://github.com/EbubeIreneaus/url_shortener_b',
           web: 'https://isls.vercel.app',
+        },
+      },
+
+      {
+        title: 'Okis Real Estate',
+        frontend: 'Talwindcss, JavaScript, React.js, Next.js',
+        backend: '',
+        desc: 'showcasing my ability in developing a UI frendly real estate and property management website',
+        Image: 'okisrealestate.png',
+        imgAlt: 'okis real estate website, full page screenshot',
+        link: {
+          github: 'https://github.com/EbubeIreneaus/okis-real-estate',
+          web: 'https://okis-real-estate.vercel.app',
         },
       },
 
